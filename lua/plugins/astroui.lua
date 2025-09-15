@@ -35,6 +35,7 @@ return {{
     },
   },
 },
+
   {
     "scottmckendry/cyberdream.nvim",
     lazy = false,
@@ -75,41 +76,7 @@ return {{
         -- More examples can be found in `lua/cyberdream/extensions/*.lua`
       },
 
-      -- Override a highlight group entirely using the built-in colour palette
-      overrides = function(colors) -- NOTE: This function nullifies the `highlights` option
-        -- Example:
-        return {
-          Comment = { fg = colors.green, bg = "NONE", italic = true },
-          ["@property"] = { fg = colors.magenta, bold = true },
-        }
-      end,
 
-      -- Override colors
-      colors = {
-        -- For a list of colors see `lua/cyberdream/colours.lua`
-
-        -- Override colors for both light and dark variants
-        bg = "#000000",
-        green = "#00ff00",
-
-        -- If you want to override colors for light or dark variants only, use the following format:
-        dark = {
-          magenta = "#ff00ff",
-          fg = "#eeeeee",
-        },
-        light = {
-          red = "#ff5c57",
-          cyan = "#5ef1ff",
-        },
-      },
-
-      -- Disable or enable colorscheme extensions
-      extensions = {
-        telescope = true,
-        notify = true,
-        mini = true,
-        -- ...
-      },
     },
   },
 }
